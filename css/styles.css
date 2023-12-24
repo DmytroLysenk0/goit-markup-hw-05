@@ -686,6 +686,7 @@ img {
   height: 100vh;
 
   background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   opacity: 0;
   visibility: hidden;
@@ -711,9 +712,15 @@ img {
   border-radius: 4px;
   background: #fcfcfc;
 
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1); 
+
+  box-shadow:0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2); 
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  
 }
 .modal-btn {
   position: absolute;
@@ -728,17 +735,36 @@ img {
   height: 24px;
   border-radius: 50%;
 
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+
   fill: #e7e9fc;
   stroke-width: 1px;
   stroke: rgba(0, 0, 0, 0.1);
 }
+.modal-btn:hover {
+  background-color: #404bbf;
+  border: none;
+  fill: #ffffff; 
+  
+}
+.modal-btn:focus {
+  background-color: #404bbf; 
+  border: none; 
+  fill: #ffffff;
+}
 .modal-btn-icon {
   background-color: #e7e9fc;
   fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .modal-caption {
   width: 360px;
   margin-bottom: 16px;
+
 
   color: #2e2f42;
   text-align: center;
@@ -916,7 +942,7 @@ img {
   display: flex;
   justify-content: center; 
   align-items: center;
-  gap: 16px;
+  /* gap: 16px; */
 
   
   border: none; 
