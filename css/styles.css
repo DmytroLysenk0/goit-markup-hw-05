@@ -876,7 +876,7 @@ img {
   align-items: center;
   justify-content: center;
   fill: transparent;
-  
+
 
   text-decoration-line: underline;
 }
@@ -989,7 +989,10 @@ img {
   fill: #ffffff;
 }
 
-.visually-hidden {
+.visually-hidden:checked .svg-checkbox {
+  background-color:#404bbf;
+  border: none; 
+  fill: #F4F4FD;
 
 }
 .field_checkbox {
@@ -998,4 +1001,11 @@ img {
   letter-spacing: 0.04em; 
   color: #8e8f99;
 
+}
+.svg-checkbox {
+
+}
+.link-privacy-policy {
+  color: #4d5ae5;
+  
 }
