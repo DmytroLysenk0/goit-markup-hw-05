@@ -920,7 +920,7 @@ img {
   background-color: #404bbf;
 }
 
-.visually-hidden:checked .privacy-policy {
+.visually-hidden:checked + .field_checkbox > .privacy-policy {
   background-color:#404bbf;
   border: none; 
   fill: #F4F4FD;
