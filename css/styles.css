@@ -890,6 +890,9 @@ img {
 .field {
   margin-bottom: 16px; 
 }
+.field .field-textarea {
+  margin-bottom: 16px;
+}
 .field_ {
   display: flex;
   margin-bottom: 16px;
