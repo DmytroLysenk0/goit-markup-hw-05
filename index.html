@@ -466,6 +466,7 @@
             </li>
           </ul>
         </div>
+        
         <!-- form footer -->
         <div class="form-footer">
           <p class="footer-caption">Subscribe</p>
@@ -491,7 +492,7 @@
 
     <!-- Modal window -->
     <!-- aria-label - атрибут доступності, описуємо що це за елемент для сео машини -->
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-btn" type="button" aria-label="Modal close button">
           <svg class="modal-btn-icon" width="8" height="8">
@@ -570,13 +571,12 @@
             />
             <label class="field_checkbox" for="user-privacy"
               >I accept the terms and conditions of the
-              <span class="privacy-policy"
-                >
+              <span class="privacy-policy">
                 <svg class="svg-checkbox" width="10" height="8">
                   <use
                     href="./images/icons.svg#icon-checkbox"
-                  ></use></svg></span
-            ><a class="link-privacy-policy" href="">Privacy Policy</a>
+                  ></use></svg>
+                  </span><a class="link-privacy-policy" href="">Privacy Policy</a>
           </label>
           </div>
           
