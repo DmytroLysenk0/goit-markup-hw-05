@@ -888,7 +888,7 @@ img {
   text-decoration-line: underline;
 }
 .field {
-  margin-bottom: 8px; 
+  margin-bottom: 16px; 
 }
 .field_ {
   display: flex;
